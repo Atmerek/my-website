@@ -63,22 +63,3 @@ pc.addEventListener("click", () => {
     },
   });
 });
-
-SD.addEventListener("click", () => {
-  const SDBox = new WinBox({
-    title: "Stable Diffusion",
-    width: "400px",
-    height: "274px",
-    top: 50,
-    right: 50,
-    bottom: 50,
-    left: 50,
-    mount: SDContent,
-    onfocus: function () {
-      this.setBackground("var(--text-color)");
-    },
-    onblur: function () {
-      this.setBackground("#777");
-    },
-  });
-});
