@@ -1,0 +1,6 @@
+Options All -Indexes
+ErrorDocument 400 /error-pages/400/index.html
+ErrorDocument 401 /error-pages/401/index.html
+ErrorDocument 403 /error-pages/403/index.html
+ErrorDocument 404 /error-pages/404/index.html
+ErrorDocument 500 /error-pages/500/index.html
