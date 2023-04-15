@@ -5,6 +5,6 @@ The title says it all.
 
 ## Screenshots
 
-https://cdn.atmerek.xyz/images/full.png
+![Alt text](https://cdn.atmerek.xyz/images/full.png "Optional title")
 
-https://cdn.atmerek.xyz/images/window.png
+![Alt text](https://cdn.atmerek.xyz/images/window.png "Optional title")
