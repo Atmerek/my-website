@@ -1,17 +1,16 @@
+console.log('%c What are you doing here?','color:red;border:1px solid dodgerblue');
 const about = document.querySelector("#about");
 const contact = document.querySelector("#contact");
 const pc = document.querySelector("#pc");
-const SD = document.querySelector("#SD");
 const aboutContent = document.querySelector("#about-content");
 const contactContent = document.querySelector("#contact-content");
 const pcContent = document.querySelector("#pc-content");
-const SDContent = document.querySelector("#SD-content");
 
 about.addEventListener("click", () => {
   const aboutBox = new WinBox({
     title: "About Me",
-    width: "400px",
-    height: "305px",
+    width: "500px",
+    height: "420px",
     top: 50,
     right: 50,
     bottom: 50,
