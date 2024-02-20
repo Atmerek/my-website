@@ -17,15 +17,26 @@ html {
 body {
   font-family: "Roboto Mono", sans-serif;
   background-color: #222222;
-  background-image: radial-gradient(#002b00, #222222),
-  url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-image: radial-gradient(#002b00, #222222);
   color: #ccc;
   font-size: 18px;
   line-height: 1.6;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-shadow:
+  0 0 15px rgba(51, 255, 51, 0.4);
+}
+
+.container2 {
+  max-width: 1500px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -41,11 +52,24 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-image: url("assets/noise.gif");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
   opacity: .02;
+}
+
+.cyn {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/cyn.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: .12;
 }
 
 .overlay {
@@ -63,31 +87,13 @@ body {
   z-index: 1;
 }
 
-.overlay::before {
-  content: "";
+.noise, .overlay {
   pointer-events: none;
   position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; /* Position from the top edge of the parent container */
+  left: 0; /* Position from the left edge of the parent container */
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-      0deg,
-      transparent 0%,
-      rgba(32, 128, 32, 0.2) 2%,
-      rgba(32, 128, 32, 0.8) 3%,
-      rgba(32, 128, 32, 0.2) 3%,
-      transparent 100%);
-  background-repeat: no-repeat;
-  animation: scan 7.5s linear 0s infinite;
-}
-
-@keyframes scan {
-  0%        { background-position: 0 -100vh; }
-  35%, 100% { background-position: 0 100vh; }
 }
 
 ul {
@@ -96,9 +102,9 @@ ul {
 }
 
 ul.no-bullets {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
@@ -121,6 +127,7 @@ h1 {
   font-size: 50px;
   letter-spacing: -5px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 h2 {
@@ -143,6 +150,7 @@ a {
 .wb-body {
   background-color: #111;
   padding: 20px;
+  overflow: hidden;
 }
 
 p {
